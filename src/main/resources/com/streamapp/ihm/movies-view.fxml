@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+  <content>
+      <VBox maxWidth="1.7976931348623157E308" prefWidth="1065.0">
+         <children>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#actionMoviesDisplay" prefHeight="0.0" text="Action">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#animationMoviesDisplay" text="Animation">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="54.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#adventureMoviesDisplay" text="Aventure">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="350.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#comedyMoviesDisplay" text="Comédie">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="350.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#documentaryMoviesDisplay" text="Documentaire">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="350.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#dramaMoviesDisplay" text="Drame">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="1235.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#familyMoviesDisplay" text="Famillial">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="1235.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#fantastiqueMoviesDisplay" text="Fantastique">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="1235.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#warMoviesDisplay" text="Guerre">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="1235.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#historyMoviesDisplay" text="Histoire">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="2730.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#mysteryMoviesDisplay" text="Mystère">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="2980.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#romanceMoviesDisplay" text="Romance">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="3005.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#sciFiMoviesDisplay" text="Science-Fiction">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="3480.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#tvShowMoviesDisplay" text="Téléfilm">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="3730.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#thrillerMoviesDisplay" text="Thriller">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="3980.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#westernMoviesDisplay" text="Western">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="10.0" layoutY="4230.0" maxWidth="1.7976931348623157E308" prefHeight="250.0">
+               <children>
+                  <Pane prefHeight="250.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1075.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Agent_Stone.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Black_Adam.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="398.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Blue_Beetle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="568.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/En_eaux_tres_troubles.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="738.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="908.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Equalizer_3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="240.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/movies_cover/Evil_Dead_Rise.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&gt;" />
+                  <JFXButton buttonType="RAISED" layoutY="71.0" maxHeight="1.7976931348623157E308" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;" text="&lt;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+  </content>
+</ScrollPane>
