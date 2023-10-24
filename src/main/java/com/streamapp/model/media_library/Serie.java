@@ -2,6 +2,9 @@ package com.streamapp.model.media_library;
 import com.streamapp.model.interfaces.MediaFile;
 import com.streamapp.model.interfaces.Media;
 
+import java.time.LocalDate;
+import java.util.List;
+
 /**
  * @author Turleque Fabrice
  * @version 1.0
@@ -18,10 +21,6 @@ public class Serie extends Media {
 
 	public Serie(){
 
-	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
 	}
 
 	/**

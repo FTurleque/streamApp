@@ -1,5 +1,8 @@
 package com.streamapp.model.media_info;
+import com.streamapp.model.interfaces.Media;
 import com.streamapp.model.interfaces.Person;
+
+import java.util.Dictionary;
 
 /**
  * @author Turleque Fabrice

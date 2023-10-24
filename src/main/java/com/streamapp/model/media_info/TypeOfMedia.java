@@ -1,6 +1,7 @@
-package com.streamapp.model.projects;
+package com.streamapp.model.media_info;
 
 import com.streamapp.model.enums.TypeOfMediaEnum;
+import com.streamapp.model.interfaces.Media;
 
 import java.util.*;
 

@@ -3,6 +3,9 @@ import com.streamapp.model.interfaces.Media;
 import com.streamapp.model.interfaces.Person;
 import com.streamapp.model.enums.WorkEnum;
 
+import java.util.Dictionary;
+import java.util.List;
+
 /**
  * @author Turleque Fabrice
  * @version 1.0

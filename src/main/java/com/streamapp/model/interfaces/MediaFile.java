@@ -1,5 +1,7 @@
 package com.streamapp.model.interfaces;
 
+import com.streamapp.model.Sources;
+
 /**
  * @author Turleque Fabrice
  * @version 1.0
@@ -12,13 +14,10 @@ public abstract class MediaFile implements FileManager {
 	protected String fileName;
 	protected String fileExtension;
 	protected String resolution;
+	protected Sources source;
 
 	public MediaFile(){
 
-	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
 	}
 
 	/**

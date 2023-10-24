@@ -2,6 +2,9 @@ package com.streamapp.model.media_library;
 import com.streamapp.model.media_info.StudioProduction;
 import com.streamapp.model.interfaces.MediaFile;
 import com.streamapp.model.interfaces.Media;
+import com.streamapp.model.media_info.TypeOfMedia;
+
+import java.util.List;
 
 /**
  * @author Turleque Fabrice

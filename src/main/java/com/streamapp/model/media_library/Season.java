@@ -1,5 +1,7 @@
 package com.streamapp.model.media_library;
 
+import java.util.List;
+
 /**
  * @author Turleque Fabrice
  * @version 1.0

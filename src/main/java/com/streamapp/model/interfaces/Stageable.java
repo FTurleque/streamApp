@@ -1,4 +1,4 @@
-package com.streamapp.model;
+package com.streamapp.model.interfaces;
 
 import com.streamapp.util.FxmlLoad;
 import javafx.stage.Stage;

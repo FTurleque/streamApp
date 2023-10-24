@@ -1,6 +1,8 @@
-package com.streamapp.model.media_info;
+package com.streamapp.model.media_library;
 import com.streamapp.model.interfaces.MediaFile;
 import com.streamapp.model.interfaces.Person;
+import com.streamapp.model.media_info.Collection;
+import com.streamapp.model.media_info.ProductionCompagny;
 import com.streamapp.model.media_library.Season;
 import com.streamapp.model.media_library.Serie;
 import com.streamapp.model.media_library.Movie;

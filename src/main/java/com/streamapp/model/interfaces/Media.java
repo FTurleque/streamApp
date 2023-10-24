@@ -1,6 +1,8 @@
 package com.streamapp.model.interfaces;
 import com.streamapp.model.enums.TypeOfMediaEnum;
 
+import java.time.LocalDate;
+
 /**
  * @author Turleque Fabrice
  * @version 1.0

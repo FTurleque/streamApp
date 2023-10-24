@@ -1,5 +1,7 @@
 package com.streamapp.model.interfaces;
 
+import java.time.LocalDate;
+
 /**
  * @author Turleque Fabrice
  * @version 1.0

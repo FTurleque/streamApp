@@ -14,11 +14,7 @@ public class Episode extends Media {
 	private int duration;
 
 	public Episode(){
-
-	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
+		super();
 	}
 
 	/**
