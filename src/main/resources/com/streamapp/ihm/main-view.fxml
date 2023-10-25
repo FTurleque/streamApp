@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="firstContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.streamapp.controllers.ihmControls.HomeViewController">
+   <left>
+      <VBox fx:id="sideBoxLeftMenu" maxHeight="1.7976931348623157E308" maxWidth="210.0" minWidth="40.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXHamburger fx:id="burgerMenu" maxHeight="40.0" maxWidth="40.0" onMouseClicked="#burgerMenusClick" prefHeight="40.0" prefWidth="40.0">
+               <VBox.margin>
+                  <Insets left="15.0" top="15.0" />
+               </VBox.margin>
+            </JFXHamburger>
+            <JFXButton fx:id="btnSearchLeftMenu" accessibleText="Recherche" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#search" text="Recherche" textFill="#070000">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/menu/search_menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnProfilLeftMenu" accessibleText="Profil" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#manageProfils" text="Profil" textFill="#110000">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/menu/men_menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnHomeLeftMenu" accessibleText="Accueil" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#homeDisplay" text="Accueil" textFill="#0d0d0d">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/menu/home_menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnFavoritesLeftMenu" accessibleText="Favoris" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#favoriteDisplay" text="Favoris">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/menu/favorite_menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnMoviesLeftMenu" accessibleText="Films" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#moviesDisplay" text="Films">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/menu/movies_menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSeriesLeftMenu" accessibleText="Séries" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#seriesDisplay" text="Séries">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/menu/series_menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSettingLeftMenu" accessibleText="Paramètre" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#settingDisplay" text="Paramètres">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/menu/setting_menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSourcesLeftMenu" accessibleText="Films" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="304.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#mediaSourcesDisplay" text="Sources">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/menu/sources_menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnExit" accessibleText="Quitter" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="472.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#applicationClose" text="Quitter" textFill="#070000">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/menu/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
