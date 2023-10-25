@@ -8,4 +8,5 @@ package com.streamapp.services;
 public interface IObserver {
 
     public void Update(IObservable observable);
+
 }
