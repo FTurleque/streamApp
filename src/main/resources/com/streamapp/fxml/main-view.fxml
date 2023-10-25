@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="firstContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.streamapp.controllers.ihmControls.HomeViewController">
+<BorderPane fx:id="firstContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.streamapp.controllers.ihmControls.MainController">
    <left>
-      <VBox fx:id="sideBoxLeftMenu" maxHeight="1.7976931348623157E308" maxWidth="210.0" minWidth="40.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="sideBoxLeftMenu" accessibleText="SideBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="72.0" prefWidth="210.0" BorderPane.alignment="CENTER">
          <children>
             <JFXHamburger fx:id="burgerMenu" maxHeight="40.0" maxWidth="40.0" onMouseClicked="#burgerMenusClick" prefHeight="40.0" prefWidth="40.0">
                <VBox.margin>

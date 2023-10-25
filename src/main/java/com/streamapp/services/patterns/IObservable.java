@@ -1,4 +1,4 @@
-package com.streamapp.services;
+package com.streamapp.services.patterns;
 
 /**
  * @author Turleque Fabrice

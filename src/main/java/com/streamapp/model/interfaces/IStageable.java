@@ -9,7 +9,7 @@ import javafx.stage.Stage;
  * @author Turleque Fabrice
  * @version 2023-10-14
  */
-public interface Stageable {
+public interface IStageable {
     /** @param stage the stage to set */
     void setStage(Stage stage);
 }

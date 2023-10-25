@@ -1,6 +1,6 @@
 package com.streamapp.util;
 
-import com.streamapp.controllers.ihmControls.HomeViewController;
+import com.streamapp.controllers.ihmControls.MainController;
 import javafx.geometry.Rectangle2D;
 import javafx.stage.Screen;
 
@@ -11,8 +11,8 @@ public class ResizeUtils {
     public static Dimension getScreenSize() {
         return dimension;
     }
-    private static Dimension dimension = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-    private static int dimension2 = java.awt.Toolkit.getDefaultToolkit().getScreenResolution();
+    private static Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+    private static int dimension2 = Toolkit.getDefaultToolkit().getScreenResolution();
     private static Rectangle2D rect = Screen.getPrimary().getVisualBounds();
     public static final int APP_LEFT_MENU_WIDTH_MINI = 72;
     public static final int APP_LEFT_MENU_WIDTH_MAX = 210;
@@ -59,15 +59,11 @@ public class ResizeUtils {
 
     /**
      * Permet de calculer la largueur du contenaire contenant les médias en fonction de la taille de la barre de menu.
-     * @param sideBarWidth
      * @return la largueur du contenaire médias.
      */
-    public static int getMediaContainerWidth(int sideBarWidth) {
+    public static double getMediaContainerWidth() {
         // TODO: Vérification sideBarWidth
-        int i = 0;
-        if(sideBarWidth != 0) {
-            i = HomeViewController.isIsOpenGlobalMenu() ? APP_LEFT_MENU_WIDTH_MAX : APP_LEFT_MENU_WIDTH_MINI;
-        }
-        return sideBarWidth - i;
+        int i = MainController.isIsOpenGlobalMenu() ? APP_LEFT_MENU_WIDTH_MAX : APP_LEFT_MENU_WIDTH_MINI;
+        return getVisualScreenWidth() - i;
     }
 }

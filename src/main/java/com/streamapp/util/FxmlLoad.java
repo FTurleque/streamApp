@@ -1,7 +1,7 @@
 package com.streamapp.util;
 
 import com.streamapp.SceneFxmlApp;
-import com.streamapp.model.interfaces.Stageable;
+import com.streamapp.model.interfaces.IStageable;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -62,7 +62,7 @@ public class FxmlLoad {
         fxmlInfo.setScene(scene);
         SceneFxmlApp.updateScenes(fxmlInfo.getSceneName(), fxmlInfo);
 
-        Stageable controller = loader.getController();
+        IStageable controller = loader.getController();
         if (controller != null) {
             controller.setStage(fxmlInfo.getStage());
         }

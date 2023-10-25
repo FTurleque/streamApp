@@ -1,6 +1,6 @@
 package com.streamapp.model.media_library;
 import com.streamapp.model.media_info.StudioProduction;
-import com.streamapp.model.interfaces.MediaFile;
+import com.streamapp.model.interfaces.MediaIFile;
 import com.streamapp.model.interfaces.Media;
 import com.streamapp.model.media_info.TypeOfMedia;
 
@@ -30,7 +30,7 @@ public class Movie extends Media {
 	 * 
 	 * @param file
 	 */
-	public void addMediaFile(MediaFile file){
+	public void addMediaFile(MediaIFile file){
 
 	}
 
@@ -46,7 +46,7 @@ public class Movie extends Media {
 	 * 
 	 * @param file
 	 */
-	public void updateFile(MediaFile file){
+	public void updateFile(MediaIFile file){
 
 	}
 

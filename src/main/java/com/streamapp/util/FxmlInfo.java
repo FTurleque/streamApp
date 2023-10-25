@@ -1,6 +1,6 @@
 package com.streamapp.util;
 
-import com.streamapp.model.SceneName;
+import com.streamapp.model.enums.SceneName;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;

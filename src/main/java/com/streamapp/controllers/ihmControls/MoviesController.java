@@ -16,7 +16,7 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.ResourceBundle;
 
-public class MoviesViewController implements IStageable, Initializable {
+public class MoviesController implements IStageable, Initializable {
 
     @FXML
     public ScrollPane scrollView;
@@ -42,51 +42,67 @@ public class MoviesViewController implements IStageable, Initializable {
         }
     }
 
+    @FXML
     public void actionMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void animationMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void adventureMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void comedyMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void documentaryMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void dramaMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void familyMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void fantastiqueMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void warMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void historyMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void mysteryMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void romanceMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void sciFiMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void tvShowMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void thrillerMoviesDisplay(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void westernMoviesDisplay(ActionEvent actionEvent) {
     }
 }
