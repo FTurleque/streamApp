@@ -1,8 +1,8 @@
-package com.streamapp.controllers.ihmControls;
+package com.streamapp.controllers.fxml;
 
-import com.streamapp.model.interfaces.Media;
-import com.streamapp.model.interfaces.IStageable;
 import com.streamapp.model.enums.TypeOfMediaEnum;
+import com.streamapp.model.interfaces.IStageable;
+import com.streamapp.model.interfaces.Media;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

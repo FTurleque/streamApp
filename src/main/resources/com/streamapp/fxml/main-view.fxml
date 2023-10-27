@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.*?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-
-<BorderPane fx:id="firstContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.streamapp.controllers.ihmControls.MainController">
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.streamapp.controllers.fxml.MainController">
    <left>
-      <VBox fx:id="sideBoxLeftMenu" accessibleText="SideBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="72.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="sideBoxLeftMenu" accessibleText="SideBar" maxHeight="1.7976931348623157E308" maxWidth="215.0" minWidth="72.0" prefWidth="215.0" BorderPane.alignment="CENTER">
          <children>
             <JFXHamburger fx:id="burgerMenu" maxHeight="40.0" maxWidth="40.0" onMouseClicked="#burgerMenusClick" prefHeight="40.0" prefWidth="40.0">
                <VBox.margin>
-                  <Insets left="15.0" top="15.0" />
+                  <Insets bottom="5.0" left="15.0" top="15.0" />
                </VBox.margin>
             </JFXHamburger>
-            <JFXButton fx:id="btnSearchLeftMenu" accessibleText="Recherche" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#search" text="Recherche" textFill="#070000">
+            <JFXButton fx:id="btnSearchLeftMenu" accessibleText="Recherche" alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="15.0" maxHeight="65.0" maxWidth="215.0" minHeight="65.0" minWidth="72.0" onAction="#search" prefHeight="65.0" prefWidth="215.0" text="Recherche" textFill="#070000">
                <font>
                   <Font name="Berlin Sans FB" size="24.0" />
                </font>
@@ -30,7 +26,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnProfilLeftMenu" accessibleText="Profil" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#manageProfils" text="Profil" textFill="#110000">
+            <JFXButton fx:id="btnProfilLeftMenu" accessibleText="Profil" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="65.0" maxWidth="215.0" minHeight="65.0" minWidth="72.0" onAction="#manageProfils" prefHeight="65.0" prefWidth="215.0" text="Profil" textFill="#110000">
                <font>
                   <Font name="Berlin Sans FB" size="24.0" />
                </font>
@@ -45,7 +41,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnHomeLeftMenu" accessibleText="Accueil" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#homeDisplay" text="Accueil" textFill="#0d0d0d">
+            <JFXButton fx:id="btnHomeLeftMenu" accessibleText="Accueil" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="65.0" maxWidth="215.0" minHeight="65.0" minWidth="72.0" onAction="#homeDisplay" prefHeight="65.0" prefWidth="215.0" text="Accueil" textFill="#0d0d0d">
                <font>
                   <Font name="Berlin Sans FB" size="24.0" />
                </font>
@@ -57,7 +53,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnFavoritesLeftMenu" accessibleText="Favoris" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#favoriteDisplay" text="Favoris">
+            <JFXButton fx:id="btnFavoritesLeftMenu" accessibleText="Favoris" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxHeight="65.0" maxWidth="215.0" minHeight="65.0" minWidth="72.0" onAction="#favoriteDisplay" prefHeight="65.0" prefWidth="215.0" text="Favoris">
                <font>
                   <Font name="Berlin Sans FB" size="24.0" />
                </font>
@@ -69,7 +65,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnMoviesLeftMenu" accessibleText="Films" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#moviesDisplay" text="Films">
+            <JFXButton fx:id="btnMoviesLeftMenu" accessibleText="Films" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="65.0" maxWidth="215.0" minHeight="65.0" minWidth="72.0" onAction="#moviesDisplay" prefHeight="65.0" prefWidth="215.0" text="Films">
                <font>
                   <Font name="Berlin Sans FB" size="24.0" />
                </font>
@@ -81,7 +77,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnSeriesLeftMenu" accessibleText="Séries" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#seriesDisplay" text="Séries">
+            <JFXButton fx:id="btnSeriesLeftMenu" accessibleText="Séries" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="65.0" maxWidth="215.0" minHeight="65.0" minWidth="72.0" onAction="#seriesDisplay" prefHeight="65.0" prefWidth="215.0" text="Séries">
                <font>
                   <Font name="Berlin Sans FB" size="24.0" />
                </font>
@@ -93,7 +89,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnSettingLeftMenu" accessibleText="Paramètre" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#settingDisplay" text="Paramètres">
+            <JFXButton fx:id="btnSettingLeftMenu" accessibleText="Paramètres" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="65.0" maxWidth="215.0" minHeight="65.0" minWidth="72.0" onAction="#settingDisplay" prefHeight="65.0" prefWidth="215.0" text="Paramètres">
                <font>
                   <Font name="Berlin Sans FB" size="24.0" />
                </font>
@@ -105,7 +101,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnSourcesLeftMenu" accessibleText="Films" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="304.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#mediaSourcesDisplay" text="Sources">
+            <JFXButton fx:id="btnSourcesLeftMenu" accessibleText="Films" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="65.0" maxWidth="215.0" minHeight="65.0" minWidth="72.0" onAction="#mediaSourcesDisplay" prefHeight="65.0" prefWidth="215.0" text="Sources">
                <font>
                   <Font name="Berlin Sans FB" size="24.0" />
                </font>
@@ -117,7 +113,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnExit" accessibleText="Quitter" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="472.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#applicationClose" text="Quitter" textFill="#070000">
+            <JFXButton fx:id="btnExit" accessibleText="Quitter" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="65.0" maxWidth="215.0" minHeight="65.0" minWidth="72.0" onAction="#applicationClose" prefHeight="65.0" prefWidth="215.0" text="Quitter" textFill="#070000">
                <font>
                   <Font name="Berlin Sans FB" size="24.0" />
                </font>
@@ -132,4 +128,7 @@
          </children>
       </VBox>
    </left>
+   <center>
+      <BorderPane fx:id="firstContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER" />
+   </center>
 </BorderPane>

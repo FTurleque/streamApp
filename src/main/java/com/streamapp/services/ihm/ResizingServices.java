@@ -1,46 +1,54 @@
 package com.streamapp.services.ihm;
 
+import com.streamapp.controllers.fxml.MainController;
+import com.streamapp.services.patterns.IObservable;
 import com.streamapp.util.ResizeUtils;
-import javafx.scene.Node;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 
-import java.util.concurrent.atomic.AtomicReference;
-
 public class ResizingServices {
-    public void resizeScrollPaneSliders(Node parent, ScrollPane child)
-    {
-        if(parent != null) {
-            if(parent instanceof BorderPane) {
-                BorderPane container = (BorderPane) parent;
-                AtomicReference<Double> x = new AtomicReference<>(container.getWidth());
-                AtomicReference<Double> y = new AtomicReference<>(container.getHeight());
+    public void resizingElements(IObservable observable) {
+        if(observable instanceof MainController) {
+            MainController mainController = (MainController) observable;
+            /* Récupération de l’élément parent et de ses enfants */
+            BorderPane container = (BorderPane) mainController.getContainerState();
+            ScrollPane scrollPane = (ScrollPane) container.getCenter();
+            VBox vBox = (VBox) scrollPane.getContent();
 
-                container.getChildren().forEach(node -> {
-                    /* Récupèration de l'espace disponible en fonction de l'état de la SideBar */
-                    if (node instanceof VBox && node.getAccessibleText().equals("SideBar")) {
-                        x.set(ResizeUtils.getMediaContainerWidth());
-                    }
-                });
-                child.setPrefWidth(x.get());
-                child.setPrefHeight(y.get());
-                if(child.getContent() instanceof VBox) {
-                    ((VBox) child.getContent()).getChildren().forEach(node -> {
-                        if(node instanceof GridPane) {
-                            resizeGridPaneSliders(x, y, (GridPane) node);
-                        }
-                    });
-                }
+            /* Redimenssionnement du ScrollPane contenant les sliders*/
+            if (scrollPane != null) {
+                resizeScrollPaneSliders(scrollPane);
             }
+            /* Redimenssionnement de la VBox contenant les sliders*/
+            if (vBox != null) {
+                resizeVBoxSlidersContainerWidth(vBox);
+            }
+            vBox.getChildren().forEach(node -> {
+                if (node instanceof GridPane) {
+                    resizeGridPaneSlidersWidth((GridPane) node);
+                }
+            });
         }
     }
 
-    private void resizeGridPaneSliders(AtomicReference<Double> x, AtomicReference<Double> y, GridPane child) {
-        if(x != null && child != null) {
-            child.getColumnConstraints().get(1).setPrefWidth(x.get() - 145);
-            child.setPrefWidth(x.get());
+    public void resizeScrollPaneSliders(ScrollPane child) {
+        if(child != null) {
+            child.setPrefWidth(ResizeUtils.getMediaContainerWidth());
+            child.setPrefHeight(ResizeUtils.getVisualScreenHeight());
+        }
+    }
+
+    public void resizeGridPaneSlidersWidth(GridPane child) {
+        if(child != null) {
+            child.getColumnConstraints().get(1).setPrefWidth(ResizeUtils.getMediaContainerWidth() - 143.5);
+        }
+    }
+
+    public void resizeVBoxSlidersContainerWidth(VBox child) {
+        if(child != null) {
+            child.setPrefWidth(ResizeUtils.getMediaContainerWidth());
         }
     }
 }

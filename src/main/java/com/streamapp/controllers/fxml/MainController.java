@@ -1,19 +1,18 @@
-package com.streamapp.controllers.ihmControls;
+package com.streamapp.controllers.fxml;
 
 import com.jfoenix.controls.JFXButton;
 import com.streamapp.SceneFxmlApp;
+import com.streamapp.model.enums.MediaTypeEnum;
 import com.streamapp.model.enums.SceneName;
 import com.streamapp.model.interfaces.IStageable;
-import com.streamapp.services.ihm.ResizingServices;
 import com.streamapp.services.patterns.IObservable;
 import com.streamapp.services.patterns.IObserver;
+import com.streamapp.util.ResizeUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
@@ -28,14 +27,11 @@ import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class MainController implements IStageable, Initializable, IObservable {
-    @FXML
-    BorderPane firstContainer;
-    @FXML
-    VBox sideBoxLeftMenu;
+    public BorderPane firstContainer;
+    public VBox sideBoxLeftMenu;
     private Stage stage;
     IObservable observable = this;
 
-    //    Coordonate state = new Coordonate(firstContainer.getWidth(), firstContainer.getHeight());
     private List<IObserver> observerList = new ArrayList<>();
     private Node nodeState;
 
@@ -44,23 +40,46 @@ public class MainController implements IStageable, Initializable, IObservable {
         // TODO: Verifier si il y a déjà des sources renseignées si non on ouvre la géstions des sources.
         IObserver sliders = new SlidersContainerControlleur();
         observable.subscribe(sliders);
-//        firstContainer.setCenter(SceneFxmlApp.getScenes().get(SceneName.SOURCES).getScene().getRoot());
-//        try {
-//            Parent loader = FXMLLoader.load(SceneFxmlApp.class.getResource("ihm/msources-view.fxml"));
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-    }
-
-    public static boolean isIsOpenGlobalMenu() {
-        return isOpenGlobalMenu;
     }
 
     private static boolean isOpenGlobalMenu = true;
 
+    /**
+     * Vérifie si la barre de gauche est ouverte ou pas.
+     * @return true ou false.
+     */
+    public static boolean isIsOpenGlobalMenu() {
+        return isOpenGlobalMenu;
+    }
+
+    public Node getContainerState() {
+        return nodeState;
+    }
+
+    private void setContainerState(Node firstContainer) {
+        this.nodeState = firstContainer;
+        this.notifySuscriber();
+    }
+
     @Override
+    @Deprecated
     public void setStage(Stage stage) {
         this.stage = stage;
+    }
+
+    @Override
+    public void subscribe(IObserver observer) {
+        this.observerList.add(observer);
+    }
+
+    @Override
+    public void RemoveObserver(IObserver observer) {
+        this.observerList.remove(observer);
+    }
+
+    @Override
+    public void notifySuscriber() {
+        this.observerList.forEach(iObserver -> iObserver.Update(this));
     }
 
     @FXML
@@ -70,11 +89,11 @@ public class MainController implements IStageable, Initializable, IObservable {
             if(btn.getClass() == JFXButton.class) {
                 ((JFXButton) btn).setText(!((JFXButton) btn).getText().isEmpty() ? "" : btn.getAccessibleText());
                 isOpen.set(!((JFXButton) btn).getText().isEmpty());
-                ((JFXButton) btn).setPrefWidth(isOpen.get() ? 40 : 210);
+                ((JFXButton) btn).setPrefWidth(isOpen.get() ? 72 : ResizeUtils.APP_LEFT_MENU_WIDTH_MAX);
                 isOpenGlobalMenu = !isIsOpenGlobalMenu();
             }
         });
-        sideBoxLeftMenu.setPrefWidth(isOpen.get() ? 210 : 72);
+        sideBoxLeftMenu.setPrefWidth(isOpenGlobalMenu ? ResizeUtils.APP_LEFT_MENU_WIDTH_MAX : ResizeUtils.APP_LEFT_MENU_WIDTH_MINI);
         setContainerState(firstContainer);
     }
 
@@ -101,48 +120,18 @@ public class MainController implements IStageable, Initializable, IObservable {
      */
     @FXML
     public void homeDisplay(ActionEvent actionEvent) throws IOException {
-        // TODO: Récupérer la liste de films contenu dans les sources.
-        /* Recuperation du ScrollPane qui va contenir les Carrousels */
-        FXMLLoader scrollPaneLoader = new FXMLLoader(SceneFxmlApp.class.getResource("fxml/container-sliders-view.fxml"));
+        /* Création du conteneur pour les Carrousels Films et serie */
+        FXMLLoader scrollPaneLoader = new FXMLLoader(SceneFxmlApp.class.getResource("fxml/sliders-view.fxml"));
         scrollPaneLoader.load();
-        SlidersContainerControlleur slidersContainerControlleur = scrollPaneLoader.getController();
-        ScrollPane scrollPane = slidersContainerControlleur.getScrollPaneSliders();
+        SlidersContainerControlleur controller = scrollPaneLoader.getController();
+        controller.setMediaType(MediaTypeEnum.MOVIE);
+        controller.setMediaType(MediaTypeEnum.SERIE);
+        ScrollPane scrollPane = controller.getScrollPaneSliders();
         if(firstContainer.getCenter() == null) {
             firstContainer.setCenter(scrollPane);
         }
-//        AtomicReference<Double> x = new AtomicReference<>(firstContainer.getWidth());
-//        Double y = firstContainer.getHeight();
-//        firstContainer.getChildren().forEach(node -> {
-//            if(node instanceof VBox) {
-//                x.set(ResizeUtils.getMediaContainerWidth());
-//            }
-//        });
-//        slidersContainerControlleur.scrollPaneSliders.setPrefWidth(x.get());
-//        slidersContainerControlleur.scrollPaneSliders.setPrefHeight(y);
-//        slidersContainerControlleur.gridCarrousel.getColumnConstraints().get(1).setPrefWidth(x.get() - 145);
-//        slidersContainerControlleur.gridCarrousel.setPrefWidth(x.get());
-        slidersContainerControlleur.gridCarrousel.getChildren().forEach(node -> {
-            if (node instanceof Label)
-            {
-                ((Label) node).setText("Test");
-            }
-        });
-        ResizingServices resizingServices = new ResizingServices();
-        resizingServices.resizeScrollPaneSliders(firstContainer, scrollPane);
-//        List<Node> carrousselList = new ArrayList<>();
-        // Création des carrousels
-//        for(TypeOfMediaEnum type : TypeOfMediaEnum.values())
-//        {
-//            // TODO: Si le type de film contient des films alors je créé le carrousel
-//            URL url = SceneFxmlApp.class.getResource("fxml/carrousel-view.fxml");
-//            FXMLLoader loader = new FXMLLoader(url);
-//            loader.load();
-//            CarrouselController carrouseController = loader.getController();
-////            carrouseController.gridCarrousel.maxWidth(firstContainer.getMaxWidth());
-//            carrouseController.setCarrouselName(type.label);
-//            carrousselList.add((GridPane) loader.getRoot());
-//        }
-//        slidersContainerControlleur.setSlidersContainer(carrousselList);
+
+        setContainerState(firstContainer);
     }
 
     /**
@@ -150,10 +139,17 @@ public class MainController implements IStageable, Initializable, IObservable {
      * @param actionEvent L'événement sur le bouton.
      */
     @FXML
-    public void moviesDisplay(ActionEvent actionEvent) {
-        Scene s = SceneFxmlApp.getScenes().get(SceneName.MOVIES).getScene();
-        firstContainer.getChildren().add(SceneFxmlApp.getScenes().get(SceneName.MOVIES).getScene().getRoot());
-//        stage.setScene(SceneFxmlApp.getScenes().get(SceneName.ALL_MOVIES).getScene());
+    public void moviesDisplay(ActionEvent actionEvent) throws IOException {
+        /* Création du conteneur pour les Carrousels de films */
+        FXMLLoader scrollPaneLoader = new FXMLLoader(SceneFxmlApp.class.getResource("fxml/sliders-view.fxml"));
+        scrollPaneLoader.load();
+        SlidersContainerControlleur controller = scrollPaneLoader.getController();
+        controller.setMediaType(MediaTypeEnum.MOVIE);
+        ScrollPane scrollPane = controller.getScrollPaneSliders();
+        if(firstContainer.getCenter() == null) {
+            firstContainer.setCenter(scrollPane);
+        }
+        setContainerState(firstContainer);
     }
 
     /**
@@ -161,8 +157,17 @@ public class MainController implements IStageable, Initializable, IObservable {
      * @param actionEvent L'événement sur le bouton.
      */
     @FXML
-    public void seriesDisplay(ActionEvent actionEvent) {
-        firstContainer.getChildren().add(SceneFxmlApp.getScenes().get(SceneName.SLIDERS).getScene().getRoot());
+    public void seriesDisplay(ActionEvent actionEvent) throws IOException {
+        /* Création du conteneur pour les Carrousels de série*/
+        FXMLLoader scrollPaneLoader = new FXMLLoader(SceneFxmlApp.class.getResource("fxml/sliders-view.fxml"));
+        scrollPaneLoader.load();
+        SlidersContainerControlleur controller = scrollPaneLoader.getController();
+        controller.setMediaType(MediaTypeEnum.SERIE);
+        ScrollPane scrollPane = controller.getScrollPaneSliders();
+        if(firstContainer.getCenter() == null) {
+            firstContainer.setCenter(scrollPane);
+        }
+        setContainerState(firstContainer);
     }
 
     /**
@@ -205,29 +210,5 @@ public class MainController implements IStageable, Initializable, IObservable {
     @FXML
     public void applicationClose(ActionEvent actionEvent) {
         System.exit(0);
-    }
-
-    @Override
-    public void subscribe(IObserver observer) {
-        this.observerList.add(observer);
-    }
-
-    @Override
-    public void RemoveObserver(IObserver observer) {
-        this.observerList.remove(observer);
-    }
-
-    @Override
-    public void notifySuscriber() {
-        this.observerList.forEach(iObserver -> iObserver.Update(this));
-    }
-
-    public Node getContainerState() {
-        return nodeState;
-    }
-
-    private void setContainerState(Node firstContainer) {
-        this.nodeState = firstContainer;
-        this.notifySuscriber();
     }
 }

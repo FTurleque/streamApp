@@ -2,14 +2,11 @@ package com.streamapp;
 
 import com.streamapp.model.enums.SceneName;
 import com.streamapp.util.FxmlInfo;
-import com.streamapp.util.ResizeUtils;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import static javafx.application.Application.launch;
 
 /**
  * Sets all scene info into a Map and displays the main scene.
@@ -19,14 +16,14 @@ import static javafx.application.Application.launch;
  */
 public class SceneFxmlApp extends Application {
     private static final String MAIN_FXML = "fxml/main-view.fxml";
-    private static final String ALL_MOVIES_FXML = "fxml/movies-view.fxml";
-    private static final String SOURCES_FXML = "fxml/media-view.fxml";
-    private static final String PROFIL_FXML = "";
-    private static final String SLIDERS_CONTAINER_FXML = "fxml/container-sliders-view.fxml";
-    private static final String FAVORITES_FXML = "";
-    private static final String CARROUSEL_FXML = "fxml/carrousel-view.fxml";
-    private static final String ALL_SERIES_FXML = "";
-    private static final String SETTING_FXML = "";
+//    private static final String SLIDERS_CONTAINER_FXML = "fxml/sliders-view.fxml";
+//    private static final String ALL_MOVIES_FXML = "fxml/movies-view.fxml";
+//    private static final String SOURCES_FXML = "fxml/media-view.fxml";
+//    private static final String CARROUSEL_FXML = "fxml/carrousel-view.fxml";
+//    private static final String PROFIL_FXML = "";
+//    private static final String FAVORITES_FXML = "";
+//    private static final String ALL_SERIES_FXML = "";
+//    private static final String SETTING_FXML = "";
     /**
      * The information for various scenes to switch between
      */
@@ -38,9 +35,9 @@ public class SceneFxmlApp extends Application {
     }
     public void start(Stage stage) {
         scenes.put(SceneName.MAIN, new FxmlInfo(MAIN_FXML, SceneName.MAIN, stage));
-        scenes.put(SceneName.SLIDERS, new FxmlInfo(SLIDERS_CONTAINER_FXML, SceneName.SLIDERS, stage));
-        scenes.put(SceneName.MOVIES, new FxmlInfo(ALL_MOVIES_FXML, SceneName.MOVIES, stage));
-        scenes.put(SceneName.MFILES, new FxmlInfo(SOURCES_FXML, SceneName.MFILES, stage));
+//        scenes.put(SceneName.SLIDERS, new FxmlInfo(SLIDERS_CONTAINER_FXML, SceneName.SLIDERS, stage));
+//        scenes.put(SceneName.MOVIES, new FxmlInfo(ALL_MOVIES_FXML, SceneName.MOVIES, stage));
+//        scenes.put(SceneName.MFILES, new FxmlInfo(SOURCES_FXML, SceneName.MFILES, stage));
 
         stage.setScene(scenes.get(SceneName.MAIN).getScene());
         stage.setTitle("Streaming App");

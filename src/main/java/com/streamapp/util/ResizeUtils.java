@@ -1,6 +1,6 @@
 package com.streamapp.util;
 
-import com.streamapp.controllers.ihmControls.MainController;
+import com.streamapp.controllers.fxml.MainController;
 import javafx.geometry.Rectangle2D;
 import javafx.stage.Screen;
 
@@ -15,27 +15,27 @@ public class ResizeUtils {
     private static int dimension2 = Toolkit.getDefaultToolkit().getScreenResolution();
     private static Rectangle2D rect = Screen.getPrimary().getVisualBounds();
     public static final int APP_LEFT_MENU_WIDTH_MINI = 72;
-    public static final int APP_LEFT_MENU_WIDTH_MAX = 210;
+    public static final int APP_LEFT_MENU_WIDTH_MAX = 215;
 
     /**
      * @return la résolution de l'écran.
      */
-    public static int getScreenResolution() {
+    public static double getScreenResolution() {
         return dimension2;
     }
 
     /**
      * @return la largueur de l'écran.
      */
-    public static int getScreenWidth() {
-        return (int)dimension.getWidth();
+    public static double getScreenWidth() {
+        return dimension.getWidth();
     }
 
     /**
      * @return la hauteur de l'écran.
      */
-    public static int getScreenHeight() {
-        return (int)dimension.getHeight();
+    public static double getScreenHeight() {
+        return dimension.getHeight();
     }
 
     @Deprecated
@@ -53,8 +53,8 @@ public class ResizeUtils {
     /**
      * @return Récupère la hauteur visible de l'écran. Attention au top de la fenêtre, à ajuster.
      */
-    public static int getVisualScreenHeight() {
-        return (int)rect.getHeight();
+    public static double getVisualScreenHeight() {
+        return rect.getHeight();
     }
 
     /**
@@ -62,8 +62,8 @@ public class ResizeUtils {
      * @return la largueur du contenaire médias.
      */
     public static double getMediaContainerWidth() {
-        // TODO: Vérification sideBarWidth
         int i = MainController.isIsOpenGlobalMenu() ? APP_LEFT_MENU_WIDTH_MAX : APP_LEFT_MENU_WIDTH_MINI;
+        // TODO: Récupèrer la taille de la fenêtre plutôt que de l'écran
         return getVisualScreenWidth() - i;
     }
 }

@@ -1,6 +1,8 @@
-package com.streamapp.controllers.ihmControls;
+package com.streamapp.controllers.fxml;
 
 import com.jfoenix.controls.JFXButton;
+import com.streamapp.model.enums.MediaTypeEnum;
+import com.streamapp.model.enums.TypeOfMediaEnum;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -20,13 +22,10 @@ public class CarrouselController implements Initializable {
     public HBox sliderMedia;
     @FXML
     public Label carrouselName;
-
-    public void setCarrouselName(String carrouselName) {
-        this.carrouselName.setText(carrouselName);
-    }
-
     @FXML
     public GridPane gridCarrousel;
+    TypeOfMediaEnum type;
+    MediaTypeEnum mediaType;
 
     @FXML
     public void rightSlide(ActionEvent actionEvent) {
@@ -36,8 +35,14 @@ public class CarrouselController implements Initializable {
     public void leftSlide(ActionEvent actionEvent) {
     }
 
+    public void setCarrouselName(String carrouselName) {
+        this.carrouselName.setText(carrouselName);
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        carrouselName.setText(gridCarrousel.getAccessibleText());
+        // TODO: Récupération des films (mediaType) ou séries selon le genre (type). Object Movie & Series
+        // TODO: Création des images.
+        // TODO: Association des images dans sliderMedia.
     }
 }

@@ -1,4 +1,4 @@
-package com.streamapp.controllers.ihmControls;
+package com.streamapp.model;
 
 public class Coordonate {
     private double width;

@@ -11,6 +11,10 @@ module com.streamapp {
 
     opens com.streamapp to javafx.fxml;
     exports com.streamapp;
-    exports com.streamapp.controllers.ihmControls;
-    opens com.streamapp.controllers.ihmControls to javafx.fxml;
+    exports com.streamapp.controllers.fxml;
+    opens com.streamapp.controllers.fxml to javafx.fxml;
+    exports com.streamapp.model;
+    opens com.streamapp.model to javafx.fxml;
+    exports com.streamapp.controllers;
+    opens com.streamapp.controllers to javafx.fxml;
 }
