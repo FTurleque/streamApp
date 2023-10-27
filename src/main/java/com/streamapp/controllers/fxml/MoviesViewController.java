@@ -1,8 +1,8 @@
-package com.streamapp.controllers.ihmControls;
+package com.streamapp.controllers.fxml;
 
-import com.streamapp.model.interfaces.Media;
-import com.streamapp.model.interfaces.Stageable;
 import com.streamapp.model.enums.TypeOfMediaEnum;
+import com.streamapp.model.interfaces.IStageable;
+import com.streamapp.model.interfaces.Media;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -16,7 +16,7 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.ResourceBundle;
 
-public class MoviesViewController implements Stageable, Initializable {
+public class MoviesViewController implements IStageable, Initializable {
 
     @FXML
     public ScrollPane scrollView;

@@ -1,4 +1,4 @@
-package com.streamapp.model;
+package com.streamapp.model.enums;
 
 import com.streamapp.SceneFxmlApp;
 
@@ -8,5 +8,5 @@ import com.streamapp.SceneFxmlApp;
  * @version 2023-10-14
  */
 public enum SceneName {
-    MANAGE_PROFILS,HOME,FAVORITES,ALL_MOVIES,ALL_SERIES,SETTING, MEDIA_SOURCES,CARROUSEL;
+    MANAGE_PROFILS, MAIN, SLIDERS,FAVORITES, MOVIES,ALL_SERIES,SETTING, MFILES,CARROUSEL;
 }

@@ -1,6 +1,6 @@
 package com.streamapp.model.media_library;
-import com.streamapp.model.interfaces.MediaFile;
-import com.streamapp.model.interfaces.Media;
+
+import com.streamapp.model.interfaces.MediaIFile;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
  * @version 1.0
  * @created 20-oct.-2023 00:01:21
  */
-public class Serie extends Media {
+public class Serie {
 
 	private String title;
 	private LocalDate release_date;
@@ -35,7 +35,7 @@ public class Serie extends Media {
 	 * 
 	 * @param file
 	 */
-	public void addMediaFile(MediaFile file){
+	public void addMediaFile(MediaIFile file){
 
 	}
 
@@ -51,7 +51,7 @@ public class Serie extends Media {
 	 * 
 	 * @param file
 	 */
-	public void updateFile(MediaFile file){
+	public void updateFile(MediaIFile file){
 
 	}
 

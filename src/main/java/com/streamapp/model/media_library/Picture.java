@@ -1,18 +1,15 @@
 package com.streamapp.model.media_library;
-import com.streamapp.model.interfaces.MediaFile;
+import com.streamapp.model.interfaces.MediaIFile;
 import com.streamapp.model.interfaces.Person;
 import com.streamapp.model.media_info.Collection;
 import com.streamapp.model.media_info.ProductionCompagny;
-import com.streamapp.model.media_library.Season;
-import com.streamapp.model.media_library.Serie;
-import com.streamapp.model.media_library.Movie;
 
 /**
  * @author Turleque Fabrice
  * @version 1.0
  * @created 20-oct.-2023 00:01:21
  */
-public class Picture extends MediaFile {
+public class Picture extends MediaIFile {
 
 	public Person m_Person;
 	private Season m_Season;
@@ -33,7 +30,7 @@ public class Picture extends MediaFile {
 	 * 
 	 * @param file
 	 */
-	public void addMediaFile(MediaFile file){
+	public void addMediaFile(MediaIFile file){
 
 	}
 
@@ -49,7 +46,7 @@ public class Picture extends MediaFile {
 	 * 
 	 * @param file
 	 */
-	public void updateFile(MediaFile file){
+	public void updateFile(MediaIFile file){
 
 	}
 

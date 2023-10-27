@@ -1,14 +1,12 @@
 package com.streamapp;
 
-import com.streamapp.model.SceneName;
+import com.streamapp.model.enums.SceneName;
 import com.streamapp.util.FxmlInfo;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import static javafx.application.Application.launch;
 
 /**
  * Sets all scene info into a Map and displays the main scene.
@@ -17,26 +15,35 @@ import static javafx.application.Application.launch;
  * @version 2023-10-14
  */
 public class SceneFxmlApp extends Application {
-    protected static final String HOME_FXML = "ihm/home-view.fxml";
-    protected static final String ALL_MOVIES_FXML = "ihm/movies-view.fxml";
-    protected static final String SOURCES_FXML = "ihm/media-view.fxml";
-    private static final String PROFIL_FXML = "";
-    private static final String FAVORITES_FXML = "";
-    private static final String CARROUSEL_FXML = "ihm/carrousel-view.fxml";
-    private static final String ALL_SERIES_FXML = "";
-    private static final String SETTING_FXML = "";
+    private static final String MAIN_FXML = "fxml/main-view.fxml";
+//    private static final String SLIDERS_CONTAINER_FXML = "fxml/sliders-view.fxml";
+//    private static final String ALL_MOVIES_FXML = "fxml/movies-view.fxml";
+//    private static final String SOURCES_FXML = "fxml/media-view.fxml";
+//    private static final String CARROUSEL_FXML = "fxml/carrousel-view.fxml";
+//    private static final String PROFIL_FXML = "";
+//    private static final String FAVORITES_FXML = "";
+//    private static final String ALL_SERIES_FXML = "";
+//    private static final String SETTING_FXML = "";
     /**
      * The information for various scenes to switch between
      */
     protected static Map<SceneName, FxmlInfo> scenes = new HashMap<>();
 
-    /**
-     * @return a Map of the {@link FxmlInfo} by {@link SceneName}
-     */
-    public static Map<SceneName, FxmlInfo> getScenes() {
-        return scenes;
-    }
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+    public void start(Stage stage) {
+        scenes.put(SceneName.MAIN, new FxmlInfo(MAIN_FXML, SceneName.MAIN, stage));
+//        scenes.put(SceneName.SLIDERS, new FxmlInfo(SLIDERS_CONTAINER_FXML, SceneName.SLIDERS, stage));
+//        scenes.put(SceneName.MOVIES, new FxmlInfo(ALL_MOVIES_FXML, SceneName.MOVIES, stage));
+//        scenes.put(SceneName.MFILES, new FxmlInfo(SOURCES_FXML, SceneName.MFILES, stage));
+
+        stage.setScene(scenes.get(SceneName.MAIN).getScene());
+        stage.setTitle("Streaming App");
+//        stage.setFullScreen(true);
+        stage.show();
+    }
 
     /**
      * Update the scene Map with new FxmlInfo
@@ -47,18 +54,11 @@ public class SceneFxmlApp extends Application {
     public static void updateScenes(SceneName name, FxmlInfo info) {
         scenes.put(name, info);
     }
-    public static void main(String[] args) {
-        launch(args);
-    }
 
-    public void start(Stage stage) {
-        scenes.put(SceneName.HOME, new FxmlInfo(HOME_FXML, SceneName.HOME, stage));
-        scenes.put(SceneName.ALL_MOVIES, new FxmlInfo(ALL_MOVIES_FXML, SceneName.ALL_MOVIES, stage));
-        scenes.put(SceneName.MEDIA_SOURCES, new FxmlInfo(SOURCES_FXML, SceneName.MEDIA_SOURCES, stage));
-
-        stage.setScene(scenes.get(SceneName.HOME).getScene());
-        stage.setTitle("Streaming App");
-//        stage.setFullScreen(true);
-        stage.show();
+    /**
+     * @return a Map of the {@link FxmlInfo} by {@link SceneName}
+     */
+    public static Map<SceneName, FxmlInfo> getScenes() {
+        return scenes;
     }
 }
